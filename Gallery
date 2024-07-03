@@ -8,6 +8,8 @@
     </head>
 
     <body>
-
+        <header class="header">
+            <h1>Auto Parts Gallery</h1>
+        </header>
     </body>
 </html>
