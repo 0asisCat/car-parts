@@ -11,5 +11,15 @@
         <header class="header">
             <h1>Auto Parts Gallery</h1>
         </header>
+        <div class="gallery">
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+        </div>
     </body>
 </html>
