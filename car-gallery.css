@@ -8,6 +8,12 @@ body{margin:0;font-family:sans-serif;background-color:#f5f6f7;}
 
 .gallery img{width:100%;max-width:350px;height:300px;object-fit:cover;border-radius:10px;}
 
-.img-container{text-align: center;}
+.gallery::after{content:"";width:350px;}
 
-.gallery img:hover{opacity:0.5;  filter: brightness(0.30);}
+img:hover{opacity:0.5;  filter: brightness(0.30);}
+
+.img-container{text-align: center;position:relative;align-items:center;}
+
+.img-descrip{position:absolute;top:40%;bottom:0;right:0;left:0;color:#fff;visibility:hidden;opacity:0;}
+
+.img-container:hover .img-descrip{visibility:visible;opacity: 1;font-size:20px;}
