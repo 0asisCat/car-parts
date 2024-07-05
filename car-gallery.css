@@ -2,7 +2,11 @@
 
 body{margin:0;font-family:sans-serif;background-color:#f5f6f7;}
 
-.header{text-align:center;text-transform:uppercase;padding:32px;background-color:#0a0a23;color:#fff;border-bottom:4px solid #fdb347;}
+.header{text-align:center;text-transform:uppercase;padding:25px;background-color:#0a0a23;color:#fff;border-bottom:4px solid #fdb347;}
+
+h1{font-size:40px;}
+
+.buttons{margin-bottom:0;}
 
 .gallery{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:center;max-width:1400px;margin:0 auto;padding:20px 10px;gap:16px;}
 
@@ -10,10 +14,11 @@ body{margin:0;font-family:sans-serif;background-color:#f5f6f7;}
 
 .gallery::after{content:"";width:350px;}
 
-img:hover{opacity:0.5;  filter: brightness(0.30);}
+.overlay{position:absolute;top:0;bottom:0;left:0;right:0;height:100%;width:100%;opacity:0;transition:.3s ease;border-radius:10px;}
+
+.img-container:hover .overlay{opacity:1;filter:brightness(0.3)}
+.img-container:hover .img-text{opacity:1;}
+
+.img-text{color:white;font-size:20px;position:absolute;top:50%;left: 50%;-webkit-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);transform:translate(-50%, -50%);text-align:center;opacity:0;}
 
 .img-container{text-align: center;position:relative;align-items:center;}
-
-.img-descrip{position:absolute;top:40%;bottom:0;right:0;left:0;color:#fff;visibility:hidden;opacity:0;}
-
-.img-container:hover .img-descrip{visibility:visible;opacity: 1;font-size:20px;}
