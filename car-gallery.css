@@ -4,7 +4,7 @@ body{margin:0;font-family:sans-serif;background-color:#f5f6f7;}
 
 .header{text-align:center;text-transform:uppercase;padding:25px;background-color:#0a0a23;color:#fff;border-bottom:4px solid #fdb347;}
 
-h1{font-size:40px;}
+h1{font-size:40px;font-weight:800;}
 
 .buttons{margin-bottom:0;}
 
